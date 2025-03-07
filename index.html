@@ -15,10 +15,18 @@
   display: block;    /* tránh lỗi khoảng trống bên dưới ảnh */
 }
 	.a a {margin: 0 11px;color: white;text-decoration: none;text-align :center;}
-    .img   {display: flex;gap: 40px; justify-content: center;margin-bottom: 40px;}
-    .img1  {display: flex;gap: 40px; justify-content: center;margin-bottom: 40px;}
-    .img2  {display: flex;gap: 40px; justify-content: center;margin-bottom: 40px;}
-    .img3  {display: flex;gap: 40px; justify-content: center;margin-bottom: 40px;}
+    .img {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép xuống hàng nếu màn hình nhỏ */
+  justify-content: center; /* Căn giữa */
+  gap: 10px; /* Khoảng cách giữa ảnh */
+}
+
+.img img {
+  width: 100%; /* Chiếm toàn bộ chiều ngang khung chứa */
+  max-width: 300px; /* Nhưng không vượt quá 300px */
+  height: auto; /* Giữ tỉ lệ */
+}
     .video {display: flex;gap: 40px; justify-content: center;margin-bottom: 40px;}
     .video1 {display: flex;gap: 40px; justify-content: center;margin-bottom: 40px;}
 	</style>
@@ -34,10 +42,10 @@
 		<a href="#contact">Liên Hệ</a>
 	</div>
 		<h2 id="wallpaper_pc">Wallpaper PC</h2>
-	<div class="img2">
+	<div class="img">
 		<img src="https://i.postimg.cc/yYfS9jpf/13.jpg">
 	</div>
-	<div class="img2">
+	<div class="img">
 		<img src="https://i.postimg.cc/d0C7bYsX/14.jpg">
 	</div>
 	<div class="img">
@@ -54,22 +62,22 @@
 	</div>
 	<h2 id="smartphone_wallpaper">Smartphone Wallpaper</h2>
 	</div>
-	<div class="img1">
+	<div class="img">
 		<img src="https://i.postimg.cc/Yq2WhZRG/10.jpg">
 		<img src="https://i.postimg.cc/P59pVxjY/11.jpg">
 		<img src="https://i.postimg.cc/pLp5BjgP/12.jpg">
 	</div>
-	<div class="img1">
+	<div class="img">
 		<img src="https://i.postimg.cc/L8YhPp1X/22.jpg">
 		<img src="https://i.postimg.cc/8z2cB0Rb/23.jpg">
 		<img src="https://i.postimg.cc/N0RMNkbv/24.jpg">
 	</div>
-	<div class="img3">
+	<div class="img">
 		<img src="https://i.postimg.cc/L6sJHf4j/19.jpg">
 		<img src="https://i.postimg.cc/c45r6H62/20.jpg">
 		<img src="https://i.postimg.cc/59gHdpJx/21.jpg">
 	</div>
-	<div class="img3">
+	<div class="img">
 		<img src="https://i.postimg.cc/mDRrK16z/25.jpg">
 		<img src="https://i.postimg.cc/R0JfvtRg/26.jpg">
 		<img src="https://i.postimg.cc/fRrm4Cx3/27.jpg">
