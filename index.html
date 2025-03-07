@@ -8,8 +8,16 @@
 	body {background-color : dimgray;}
 	h2 {color: white;}
 	.a a {margin: 0 11px;color: white;text-decoration: none;text-align :center;}
-	.img {display: flex;flex-wrap;gap 10px;justify-content:center;}
-	.img img {object-fit: cover;border-radius: 10px;}
+	.img {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 cột */
+      gap: 10px;
+    }
+    .img img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
 
 
 }
