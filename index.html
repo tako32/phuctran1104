@@ -5,17 +5,85 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Wallpaper Anime</title>
 	<style>
-	body {background-color : dimgray;}
+	body {background-color: #242526;
+    text-align: center;}
+	.download-link {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s;
+        }
+        .download-link:hover {
+            background: #33FFFF;
+        }
 	h2 {color: white;}
-	.a a {margin: 0 11px;color: white;text-decoration: none;text-align :center;}
-	.img {display: grid;grid-template-columns: repeat(2, 1fr);gap : clamp(3px, 3vw, 50px);margin-left: clamp(3px,3vw, 50px);margin-right: clamp(3px,3vw, 30px)}
+.a {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.a a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+.a a:hover {
+    background: #00ffff;
+    color: #000;
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 600px) {
+    .a {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .a a {
+        width: 90%;
+        text-align: center;
+        padding: 12px;
+    }
+}
+	h2 {text-align : center;}
+	.img {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: clamp(3px, 3vw, 30px);
+         padding: clamp(3px, 3vw, 30px);
+         justify-content: center;
+        }
+		    .back-to-top {
+            position: fixed;
+            bottom: 10px;
+            right: 0px;
+            cursor: pointer;
+            width: 50px;
+            transition: transform 0.3s;
+        }
+        .back-to-top:hover {
+            transform: scale(1.2);
+        }
 	.img img {width: 100%; height: auto;border-radius: 8px;margin: auto;}
   .videocontainer  {display: grid;grid-template-columns: repeat(1, 1fr);width: 100%;aspect-ratio: 16 / 9;margin:auto;margin-bottom: clamp(3px,3vw,30px);}
     .videocontainer iframe {width: 100%; height: 100%;border: none;}
 	</style>
 </head>
 <body>
-		<a href="index.html"><img id="top" src="https://i.postimg.cc/WzBNyyys/logo-wallpaper-anime.webp" style="display: block; margin :auto;width: clamp(10px, 28vw, 500px);""></a>
+		<a href="wallpaper-anime-ashen.vercel.app"><img id="top" src="https://i.postimg.cc/WzBNyyys/logo-wallpaper-anime.webp" style="display: block; margin :auto;width: clamp(10px, 19vw, 500px);""></a>
 	<div class="a" style="text-align: center;">
 		<a href="#top">Trang Chủ</a>
 		<a href="#wallpaper_pc">Hình Nền Máy Tính</a>
@@ -29,45 +97,45 @@
 		<img src="https://i.postimg.cc/7Zp3VP9R/14.webp" >
 		<img src="https://i.postimg.cc/Y0vHzf8Q/28.jpg" >
 		<img src="https://i.postimg.cc/y84H0RRS/29.jpg" >
-		<img src="https://i.postimg.cc/cHWfpDVM/15.webp" loading="lazy">
-		<img src="https://i.postimg.cc/90FZMDXD/16.webp" loading="lazy" >
+		<img src="https://i.postimg.cc/cHWfpDVM/15.webp" >
+		<img src="https://i.postimg.cc/90FZMDXD/16.webp" >
 
-                <img src="https://i.postimg.cc/DfNFyHy6/31.jpg" loading="lazy">
-		<img src="https://i.postimg.cc/15NSgB8Q/32.jpg" loading="lazy">
-                <img src="https://i.postimg.cc/wMndfybZ/30.jpg" loading="lazy">
-		<img src="https://i.postimg.cc/YC6wRSND/33.jpg" loading="lazy">
+        <img src="https://i.postimg.cc/DfNFyHy6/31.jpg" >
+		<img src="https://i.postimg.cc/15NSgB8Q/32.jpg" >
+        <img src="https://i.postimg.cc/wMndfybZ/30.jpg" >
+		<img src="https://i.postimg.cc/YC6wRSND/33.jpg" >
 
-		<img src="https://i.postimg.cc/HLT1hCBY/34.jpg" loading="lazy">
-		<img src="https://i.postimg.cc/fLLnMjG1/35.jpg" loading="lazy">
-		<img src="https://i.postimg.cc/5yYhC9N3/36.jpg" loading="lazy">
-		<img src="https://i.postimg.cc/NGZMP5TQ/37.jpg" loading="lazy">
+		<img src="https://i.postimg.cc/HLT1hCBY/34.jpg" >
+		<img src="https://i.postimg.cc/fLLnMjG1/35.jpg" >
+		<img src="https://i.postimg.cc/5yYhC9N3/36.jpg" >
+		<img src="https://i.postimg.cc/NGZMP5TQ/37.jpg" >
 
-		<img src="https://i.postimg.cc/BbYD1JtM/17.webp"loading="lazy">
-		<img src="https://i.postimg.cc/DZc1nrhV/18.webp"loading="lazy">
-		<img src="https://i.postimg.cc/3NKCvL1J/7.webp" loading="lazy">
-		<img src="https://i.postimg.cc/MHd0by30/8.webp" loading="lazy">
+		<img src="https://i.postimg.cc/BbYD1JtM/17.webp">
+		<img src="https://i.postimg.cc/DZc1nrhV/18.webp" >
+		<img src="https://i.postimg.cc/3NKCvL1J/7.webp" >
+		<img src="https://i.postimg.cc/MHd0by30/8.webp" >
 	</div>
 	<h2 id="smartphone_wallpaper">Hình Nền Điện Thoại</h2>
 	</div>
 	<div class="img" style="grid-template-columns: repeat(3, 1fr);">
-		<img src="https://i.postimg.cc/5NKqXSCb/10.webp" loading="lazy">
-		<img src="https://i.postimg.cc/J4z572tp/11.webp" loading="lazy">
-		<img src="https://i.postimg.cc/8CMhn8nz/12.webp" loading="lazy">
-		<img src="https://i.postimg.cc/rscg9yVT/22.webp" loading="lazy">
-		<img src="https://i.postimg.cc/MT1dRf8t/23.webp" loading="lazy">
-		<img src="https://i.postimg.cc/SRrd10RM/24.webp" loading="lazy">
-		<img src="https://i.postimg.cc/CL5bpn6t/19.webp" loading="lazy">
-		<img src="https://i.postimg.cc/SNPCSQBK/20.webp" loading="lazy">
-		<img src="https://i.postimg.cc/66YCPfzn/21.webp" loading="lazy">
-		<img src="https://i.postimg.cc/kMFTgSsg/25.webp" loading="lazy">
-		<img src="https://i.postimg.cc/kXJf65YF/26.webp" loading="lazy">
-		<img src="https://i.postimg.cc/XYXLLzbr/27.webp" loading="lazy">
-		<img src="https://i.postimg.cc/Vvx3ByJc/38.jpg" loading="lazy">
-		<img src="https://i.postimg.cc/tRsJ5hsr/39.jpg" loading="lazy">
-		<img src="https://i.postimg.cc/Wbr3RT6g/40.jpg" loading="lazy">
-		<img src="https://i.postimg.cc/W3WVZfm2/41.jpg" loading="lazy">
-		<img src="https://i.postimg.cc/Bv3JfFQG/42.jpg" loading="lazy">
-		<img src="https://i.postimg.cc/yNTs1Nk3/43.jpg" loading="lazy">
+		<img src="https://i.postimg.cc/5NKqXSCb/10.webp" >
+		<img src="https://i.postimg.cc/J4z572tp/11.webp" >
+		<img src="https://i.postimg.cc/8CMhn8nz/12.webp" >
+		<img src="https://i.postimg.cc/rscg9yVT/22.webp" >
+		<img src="https://i.postimg.cc/MT1dRf8t/23.webp" >
+		<img src="https://i.postimg.cc/SRrd10RM/24.webp" >
+		<img src="https://i.postimg.cc/CL5bpn6t/19.webp">
+		<img src="https://i.postimg.cc/SNPCSQBK/20.webp" >
+		<img src="https://i.postimg.cc/66YCPfzn/21.webp">
+		<img src="https://i.postimg.cc/kMFTgSsg/25.webp" >
+		<img src="https://i.postimg.cc/kXJf65YF/26.webp" >
+		<img src="https://i.postimg.cc/XYXLLzbr/27.webp" >
+		<img src="https://i.postimg.cc/Vvx3ByJc/38.jpg" >
+		<img src="https://i.postimg.cc/tRsJ5hsr/39.jpg" >
+		<img src="https://i.postimg.cc/Wbr3RT6g/40.jpg" >
+		<img src="https://i.postimg.cc/W3WVZfm2/41.jpg" >
+		<img src="https://i.postimg.cc/Bv3JfFQG/42.jpg" >
+		<img src="https://i.postimg.cc/yNTs1Nk3/43.jpg" >
 	</div>
 	<h2 id="livewallpaper">Hình Nền Động</h2>
 <div class="videocontainer" style="width: 80%">
@@ -98,9 +166,11 @@
   <iframe src="https://player.vimeo.com/video/1063876611?h=5a0ad12596&autoplay=1&background=1"></iframe>
 </div>
 	<h2 id="download">Tải Xuống</h2>
-    <a style="font-size: 20px;text-decoration: none" href="https://drive.google.com/drive/folders/1G_0wGbPYT2HEtado81OAXPN_i_tNhHFp?usp=drive_link">Nhấn vào đây để tải(Goolge Drive)</a>
+    <a class="download-link" href="https://drive.google.com/drive/folders/1G_0wGbPYT2HEtado81OAXPN_i_tNhHFp?usp=drive_link">Nhấn vào đây để tải(Goolge Drive)</a>
     <div style="text-align:right;">
-  <a href="#top"><img src="https://i.postimg.cc/yxg6vKvf/button.webp" width="100px" height="100px"></a>
+    <a href="#top">
+        <img class="back-to-top" src="https://i.postimg.cc/yxg6vKvf/button.webp" width="50px">
+    </a>
 </div>
 </body>
 </html>
